@@ -20,12 +20,12 @@ jobs:
         node-version: 12.x
     
     - name: Install dependencies
-      run: yarn install
+      run: npm install
     
     #testes
     
     - name: Build
-      run: yarn build
+      run: npm run build
     
     - uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
       with:
